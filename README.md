@@ -1,7 +1,7 @@
 # Filmes e produtores
 
-Esta api inicia carregando uma lista de filmes em memoria, e já deixa calculado a distancia minima e maxima entre os ganhadores
-Toda vez que é adicionado ou atualizado um filme novo, será recalculado a distancia minima e maxima
+Esta api inicia carregando uma lista de filmes em memoria, e já deixa calculado a intervalo minimo e maximo entre os ganhadores
+Toda vez que é adicionado ou atualizado um filme novo, será recalculado o intervalo minimo e maximo
 
 ## 🚀 Começando
 
