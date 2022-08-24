@@ -31,7 +31,7 @@ def calculate_winner():
     for movie in movies:
         for producer in re.split(' and |, ', movie.producers):
 
-            winner_in_db = session.query(Winners).filter(Winners.producer == producer).order_by(desc(Winners.id)).all()
+            winner_in_db = session.query(Winners).filter(Winners.producer == producer).order_by(desc(Winners.followingWin)).all()
             if len(winner_in_db) == 0:
                 winner = Winners(producer,
                                  None,
@@ -44,7 +44,7 @@ def calculate_winner():
                                                                                         'interval': movie.year - winner_in_db[0].previousWin})
             else:
                 winner = Winners(producer,
-                                 winner_in_db[0].followingWin - movie.year,
+                                 movie.year - winner_in_db[0].followingWin,
                                  winner_in_db[0].followingWin,
                                  movie.year)
                 session.add(winner)
