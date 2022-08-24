@@ -8,7 +8,7 @@ Toda vez que é adicionado ou atualizado um filme novo, será recalculado o inte
 Clonar respositorio https://github.com/nicollasborges/movies_producers_winners.git
 
 ### 📋 Pré-requisitos
-
+<p>python==3.9.0</p>
 <p>fastapi==0.79.1</p>
 <p>uvicorn==0.18.2</p>
 <p>SQLAlchemy==1.4.40</p>
